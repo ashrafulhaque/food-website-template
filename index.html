@@ -3,15 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>City Food</title>
+    <title>City Foods</title>
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
       rel="stylesheet"
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/93715cd56f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <h1 class="text-orange-500">City Food</h1>
+    <header>
+      <!-- Navbar start -->
+      <div class="navbar bg-neutral text-neutral-content">
+        <div class="navbar-start">
+          <img
+            class="w-14"
+            src="./resources/logo/logoo.png"
+            alt="Logo of City Foods Website"
+          />
+          <a class="text-2xl font-bold">City Foods</a>
+        </div>
+        <div class="navbar-center"></div>
+        <div class="navbar-end">
+          <!-- Menu for large screens -->
+          <div class="hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Potato</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Soup</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Chicken</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Beef</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Dropdown for mobile screens -->
+          <div class="dropdown dropdown-end">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="menu menu-sm dropdown-content bg-neutral rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+            >
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Potato</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Soup</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Chicken</a
+                >
+              </li>
+              <li>
+                <a
+                  class="hover:bg-slate-900 hover:text-white transition duration-300 ease-in-out"
+                  >Beef</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navbar end -->
+    </header>
   </body>
 </html>

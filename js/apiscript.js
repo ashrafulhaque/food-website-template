@@ -32,7 +32,7 @@ const displayMeals = (meals) => {
         </figure>
         <div class="card-body">
           <h2 class="card-title block text-center -mt-3">${meal.strMeal}</h2>
-          <p class="text-slate-400 text-xs text-center">${
+          <p class="text-slate-500 text-xs text-center">${
             meal.strIngredient1
           }/${meal.strIngredient2}/${meal.strIngredient3}</p>
           <p title="${meal.strInstructions}">${meal.strInstructions.slice(

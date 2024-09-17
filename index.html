@@ -26,7 +26,7 @@
             alt="Logo of City Foods Website"
           />
           <a
-            class="text-2xl md:text-3xl text-slate-700 font-bold pl-3 font-serif"
+            class="text-2xl md:text-3xl text-slate-700 font-bold pl-7 font-serif"
             >City Foods</a
           >
         </div>
@@ -34,7 +34,7 @@
         <div class="navbar-end">
           <!-- Menu for large screens -->
           <div class="hidden lg:flex">
-            <ul class="menu menu-horizontal px-1 text-slate-800">
+            <ul class="menu menu-horizontal px-1 text-swhite">
               <li>
                 <a onclick="fetchMealsByType('potato')">POTATO</a>
               </li>
@@ -69,7 +69,7 @@
             </div>
             <ul
               tabindex="0"
-              class="menu menu-sm dropdown-content text-slate-800 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
+              class="menu menu-sm dropdown-content text-swhite bg-base-100 rounded-box z-[1] mt-7 w-52 p-2 shadow right-0"
             >
               <li>
                 <a onclick="fetchMealsByType('potato')">POTATO</a>
@@ -107,7 +107,7 @@
                 <button
                   class="btn bg-orange-500 border-none text-white hover:text-black mb-6"
                 >
-                  Order Now
+                  Explore Categories
                 </button>
               </div>
             </div>
@@ -136,7 +136,7 @@
                 <button
                   class="btn bg-orange-500 border-none text-white hover:text-black mb-6"
                 >
-                  Order Now
+                  Explore Categories
                 </button>
               </div>
             </div>
@@ -165,7 +165,7 @@
                 <button
                   class="btn bg-orange-500 border-none text-white hover:text-black mb-6"
                 >
-                  Order Now
+                  Explore Categories
                 </button>
               </div>
             </div>
@@ -182,13 +182,15 @@
     </header>
     <main class="w-11/12 mx-auto">
       <div class="divider">
-        <span id="foodType" class="uppercase text-xl font-serif text-red-600"
+        <span
+          id="foodType"
+          class="uppercase text-xl font-serif text-red-text-gray-400"
           >Placeholder Type Text</span
         >
       </div>
       <section
         id="card-container"
-        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-6 justify-evenly"
+        class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-7 lg:grid-cols-4 gap-4 my-6 justify-evenly"
       >
         <!--Dynamic Food Cards loads here..-->
       </section>
@@ -256,6 +258,95 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div
+        class="w-full relative bg-cover bg-center min-h-40"
+        style="background-image: url('./resources/footer/footerbg.jpg')"
+      >
+        <div class="absolute inset-0 bg-black opacity-70"></div>
+        <!--3 columns grid-->
+        <div
+          class="grid sm:grid-cols-3 items-center justify-evenly relative z-10 h-full w-11/12 mx-auto"
+        >
+          <!--col-1-->
+          <div class="pt-6">
+            <img
+              class="w-32 h-32 mx-auto"
+              src="./resources/logo/logoo.png"
+              alt="Logo"
+            />
+            <p class="text-xs text-justify sm:p-4 text-white font-serif">
+              This food website template is designed for modern web development
+              using HTML, CSS, ES6, Tailwind CSS,The Meal DB API and Daisy UI.
+              It offers a sleek, responsive layout ideal for restaurants, cafes,
+              or food blogs.
+            </p>
+          </div>
+          <!--col-1 End-->
+          <!--Col 2 Start-->
+          <div class="flex flex-col text-white font-serif py-6 sm:mx-auto">
+            <h1 class="my-4 text-xl font-bold">QUICK LINKS</h1>
+            <a href="#" class="text-sm hover:text-gray-400 leading-7">
+              About Us
+            </a>
+            <a href="#" class="text-sm hover:text-gray-400 leading-7">
+              Features
+            </a>
+            <a href="#" class="text-sm hover:text-gray-400 leading-7">
+              Services
+            </a>
+            <a href="#" class="text-sm hover:text-gray-400 leading-7"> Blog </a>
+            <a href="#" class="text-sm hover:text-gray-400 leading-7">
+              Privacy Policy
+            </a>
+          </div>
+          <!--Col 2 End-->
+          <!--Col 3 Start-->
+          <div class="text-white sm:mx-auto font-serif">
+            <h1 class="text-xl font-bold">CONTACT INFO</h1>
+            <address class="text-sm mt-3">
+              <p>Address: City Foods Tower, Dhanmondi, Dhaka, Bangladesh</p>
+              <p>Contact Number: +880 1712 345678</p>
+            </address>
+            <p class="text-sm py-3">
+              Follow us on social media for the latest updates.
+            </p>
+            <div class="flex items-center gap-2">
+              <a href="#"
+                ><img
+                  class="max-w-12"
+                  src="./resources/social/facebook.png"
+                  alt="Facebook"
+              /></a>
+              <a href="#"
+                ><img
+                  class="max-w-12"
+                  src="./resources/social/twitter.png"
+                  alt="Twitter"
+              /></a>
+              <a href="#"
+                ><img
+                  class="max-w-12"
+                  src="./resources/social/instagram.png"
+                  alt="Instagram"
+              /></a>
+              <a href="#"
+                ><img
+                  class="max-w-12"
+                  src="./resources/social/linkedin.png"
+                  alt="Linkedin"
+              /></a>
+            </div>
+          </div>
+          <!--Col 3 End-->
+        </div>
+      </div>
+      <div class="w-full min-h-16 bg-slate-950 text-white text-center">
+        <p class="pt-5 text-sm font-mono">
+          Copyright &copy; 2024, Md.Ashraful Haque, All Rights Reserved.
+        </p>
+      </div>
+    </footer>
     <script src="./js/apiscript.js"></script>
   </body>
 </html>

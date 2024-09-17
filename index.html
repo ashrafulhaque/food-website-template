@@ -36,16 +36,16 @@
           <div class="hidden lg:flex">
             <ul class="menu menu-horizontal px-1 text-slate-800">
               <li>
-                <a>POTATO</a>
+                <a onclick="fetchMealsByType('potato')">POTATO</a>
               </li>
               <li>
-                <a>SOUP</a>
+                <a onclick="fetchMealsByType('soup')">SOUP</a>
               </li>
               <li>
-                <a>CHICKEN</a>
+                <a onclick="fetchMealsByType('chicken')">CHICKEN</a>
               </li>
               <li>
-                <a>BEEF</a>
+                <a onclick="fetchMealsByType('beef')">BEEF</a>
               </li>
             </ul>
           </div>
@@ -72,16 +72,16 @@
               class="menu menu-sm dropdown-content text-slate-800 bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0"
             >
               <li>
-                <a>POTATO</a>
+                <a onclick="fetchMealsByType('potato')">POTATO</a>
               </li>
               <li>
-                <a>SOUP</a>
+                <a onclick="fetchMealsByType('soup')">SOUP</a>
               </li>
               <li>
-                <a>CHICKEN</a>
+                <a onclick="fetchMealsByType('chicken')">CHICKEN</a>
               </li>
               <li>
-                <a>BEEF</a>
+                <a onclick="fetchMealsByType('beef')">BEEF</a>
               </li>
             </ul>
           </div>
@@ -181,103 +181,16 @@
       <!-- Banner end-->
     </header>
     <main class="w-11/12 mx-auto">
-      <div class="divider">Food Items</div>
-      <!--Dynamic Food Cards Section Start-->
+      <div class="divider">
+        <span id="foodType" class="uppercase text-xl font-serif text-red-600"
+          >Placeholder Type Text</span
+        >
+      </div>
       <section
+        id="card-container"
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-6 justify-evenly"
       >
-        <div
-          class="card card-compact bg-base-100 w-auto shadow-xl rounded-none"
-        >
-          <figure>
-            <img
-              src="resources/banner/banner1.jpg"
-              style="
-                clip-path: polygon(0% 0%, 100% 0, 100% 85%, 51% 100%, 0 85%);
-              "
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title block text-center">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="divider my-0"></div>
-            <div class="mx-auto">
-              <button class="btn btn-outline text-orange-700 h-10 min-h-10">
-                VIEW DETAILS
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card card-compact bg-base-100 w-auto shadow-xl rounded-none"
-        >
-          <figure>
-            <img
-              style="
-                clip-path: polygon(0% 0%, 100% 0, 100% 85%, 51% 100%, 0 85%);
-              "
-              src="resources/banner/banner2.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title block text-center">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="divider my-0"></div>
-            <div class="mx-auto">
-              <button class="btn btn-outline text-orange-700 h-10 min-h-10">
-                VIEW DETAILS
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card card-compact bg-base-100 w-auto shadow-xl rounded-none"
-        >
-          <figure>
-            <img
-              style="
-                clip-path: polygon(0% 0%, 100% 0, 100% 85%, 51% 100%, 0 85%);
-              "
-              src="resources/banner/banner3.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="divider my-0"></div>
-            <div class="mx-auto">
-              <button class="btn btn-outline text-orange-700 h-10 min-h-10">
-                VIEW DETAILS
-              </button>
-            </div>
-          </div>
-        </div>
-        <div
-          class="card card-compact bg-base-100 w-auto shadow-xl rounded-none"
-        >
-          <figure>
-            <img
-              style="
-                clip-path: polygon(0% 0%, 100% 0, 100% 85%, 51% 100%, 0 85%);
-              "
-              src="resources/banner/banner1.jpg"
-              alt="Shoes"
-            />
-          </figure>
-          <div class="card-body">
-            <h2 class="card-title">Shoes!</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div class="divider my-0"></div>
-            <div class="mx-auto">
-              <button class="btn btn-outline text-orange-700 h-10 min-h-10">
-                VIEW DETAILS
-              </button>
-            </div>
-          </div>
-        </div>
+        <!--Dynamic Food Cards loads here..-->
       </section>
       <!--FAQ Section Start-->
       <section

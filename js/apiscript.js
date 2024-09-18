@@ -42,7 +42,7 @@ const displayMeals = (meals) => {
           <div class="divider my-0"></div>
           <div class="mx-auto">
             <a href="${meal.strSource}" target="_blank"
-                    class="btn btn-outline text-orange-700 h-10 min-h-10">
+                    class="btn btn-outline text-orange-600 h-10 min-h-10">
               VIEW DETAILS
             </a>
           </div>
